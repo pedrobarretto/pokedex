@@ -1,0 +1,90 @@
+body {
+  background-color: snow;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  /* background-color: #f4f4f4; */
+  color: #222;
+  display: grid;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #222;
+  margin-top: 5px;
+}
+
+.card-img {
+  height: 180px;
+  margin: 0 auto;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+}
+
+@media (max-width: 400px) {
+  #pokedex {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+@media (max-width: 330px) {
+  #pokedex {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-img {
+    height: 140px;
+    margin: 0 auto;
+  }
+  .card {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+}

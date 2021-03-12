@@ -8,4 +8,4 @@ I like it a lot, and to start learning about APIs and others web programming con
 
 So I made a kind of pokédex, with the first 151 pokemons. As I used a public API, called [PokeApi](https://pokeapi.co/), I decided not to make so many requests, from several Pokémon, so I only made them with the first generation.
 
-You can enter the site through the link: https://pedrobarretto.github.io/pokedex/
+You can enter the site through the link: http://pokedex.pedrobarretto.dev.br/
